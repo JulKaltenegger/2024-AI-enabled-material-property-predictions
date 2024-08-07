@@ -1,6 +1,8 @@
 #  Use Case 2 - Prediciton of Material Environmental Indicator
 Data Source: SLiCE Hotspot analysis 
 
+
+
 ## FAIR Analysis
 
 ### Data quality
