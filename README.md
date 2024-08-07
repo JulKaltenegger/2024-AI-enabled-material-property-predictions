@@ -10,7 +10,7 @@ This work aims to evaluate methods for modelling and predicting building materia
 The methods examined, as shown in the table below, address data modeling techniques such as missing value imputation, natural language processing, knowledge graphs, and ontology developments. Methods for data prediction and population assessment include machine learning and artificial neural networks, as well as knowledge graph inference techniques. Find references in the 'LiteratureList.xlsx'.
 
 | Method | Data Source | Data modelling | Data prediction and population | Data validation and storage |
-| :-----------------: | :----------: | :----------: | :--------: | :--------: | :--------: |
+| :-----------------: | :----------: | :----------: | :--------: | :--------: |
 | Techniques| Extract Transform Load | Semantic analysis and concept definition | Data-driven and logic approach | Exploration |
 | Sub-Symbolic | Feature imputation and missing values | Natural Language Processing | Machine Learning and Artificial Neural Networks | Model Evaluation |
 | Symbolic |Semantic analysis | Knowledge Graph and Ontology | Knowlegde Graph inference, Link prediction, Description Logic | Entity identificaiton, relationship validation |
