@@ -14,5 +14,6 @@ The methods examined, as shown in the table below, address data modelling techni
 | Symbolic | Knowledge Engineering and Ontology | Semantic Knowledge Graph | Knowlegde Graph inference, Link prediction, Description Logic | Resolution-based reasoning |
 
 ## Experiment and implementaiton of an instance
-
 Further, an early-stage experiments is tested against two uses cases addressing symbolic methods to analyse semantics and capture domain knowledge and sub-symbolic methods, to predict material properties. Use Case 1, tackles the modelling and prediction of physical material property prediction, and Use Case 2, addresses the modelling and prediction of environmental indicators.
+
+![Concept Diagram](https://github.com/user-attachments/assets/5da4c6b5-b33e-4f00-90ae-0fe28950b31a){width=50%}
