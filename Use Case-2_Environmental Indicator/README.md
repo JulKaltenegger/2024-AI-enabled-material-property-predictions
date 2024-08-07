@@ -1,5 +1,10 @@
 #  Use Case 2 - Prediciton of Material Environmental Indicator
-Data Source: SLiCE Hotspot analysis 
+
+Use Case Specification: This use case specifies on the semantic definition, modelling, and prediction of materials environmental performance indicators.
+
+Data Source: The SLiCE data model provides information to material’s and building element’s environmental impacts. SLiCE (Röck et al., 2023) is developed as a tool for systematic analysis of environmental hotspot across the life cycle of buildings and construction elements using data compliant with the SLiCE building data model.
+
+![ConceptModel_EnvironmentalImpact](https://github.com/user-attachments/assets/0256ae5b-b3d6-48b9-824f-24722153d43c){width=25%}
 
 
 
@@ -8,7 +13,7 @@ Data Source: SLiCE Hotspot analysis
 ### Data quality
 
 ##### Data source
-Data definitions and calculations follow EN 15978 (Röck et al., 2023)
+Data definitions and calculations follow EN 15978 
 ##### Terminology 
 
 | Terminology | Class |  Instance | 
