@@ -11,9 +11,9 @@ The methods examined, as shown in the table below, address data modeling techniq
 
 | Method | Data Source | Data modelling | Data prediction and population | Data validation and storage |
 | :-----------------: | :----------: | :----------: | :--------: | :--------: | :--------: |
-| Techniques| Extract Transform Load | Semantic analysis and concept definition | Logic and data-driven approach | Exploration |
-| Sub-Symbolic | Feature imputation and missing values | Natural Language Processing | Machine Learning and Artificial Neural Networks | Model evaluation
-| Symbolic |Semantic analysis | Knowledge Graph and Ontology | Knowlegde Graph inference, Link prediction, Description Logic | Reasoning-based evaluation
+| Techniques| Extract Transform Load | Semantic analysis and concept definition | Data-driven and logic approach | Exploration |
+| Sub-Symbolic | Feature imputation and missing values | Natural Language Processing | Machine Learning and Artificial Neural Networks | Model Evaluation |
+| Symbolic |Semantic analysis | Knowledge Graph and Ontology | Knowlegde Graph inference, Link prediction, Description Logic | Entity identificaiton, relationship validation |
 
 ## Experiment and implementaiton of an instance
 
