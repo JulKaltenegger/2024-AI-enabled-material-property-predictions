@@ -3,9 +3,8 @@
 Use Case Specification: This use case specifies on the semantic definition, modelling, and prediction of materials environmental performance indicators.
 
 Data Source: The SLiCE data model provides information to material’s and building element’s environmental impacts. SLiCE (Röck et al., 2023) is developed as a tool for systematic analysis of environmental hotspot across the life cycle of buildings and construction elements using data compliant with the SLiCE building data model.
-![ConceptModel_EnvironmentalImpact](https://github.com/user-attachments/assets/6d00a610-e734-4d3a-bf12-070f48b03e84){width = 25%}
 
-
+<img src="https://github.com/user-attachments/assets/6d00a610-e734-4d3a-bf12-070f48b03e84" alt="Concept Model" width="50%" />
 
 ## FAIR Analysis
 
