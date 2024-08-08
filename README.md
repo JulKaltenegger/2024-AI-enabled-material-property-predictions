@@ -17,4 +17,4 @@ The methods examined, as shown in the table below, address data modelling techni
 ## Experiment and implementaiton of an instance
 An early-stage experiments is tested against two uses cases addressing symbolic methods to analyse semantics and capture domain knowledge and sub-symbolic methods, to predict material properties, see figure below. Further, two use cases are explored. Use Case 1, tackles the modelling and prediction of physical material property prediction, and Use Case 2, addresses the modelling and prediction of environmental indicators.
 
-![Concept Diagram](https://github.com/user-attachments/assets/5da4c6b5-b33e-4f00-90ae-0fe28950b31a)
+![Concept Diagram](https://github.com/user-attachments/assets/477e815b-7ffb-49a6-9ddf-d4358aa40d42)
