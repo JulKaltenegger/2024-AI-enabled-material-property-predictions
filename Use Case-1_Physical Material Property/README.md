@@ -10,6 +10,7 @@ ML-driven approaches in the field of materials science, focusing on the design a
 
 <img src="https://github.com/user-attachments/assets/3f027f15-99f7-4fa7-8c2f-ac93fb0fbf1c" alt="Concept Model" width="50%" />
 
+<c:\Users\20180031\Dropbox\_PhD\09_Conference\03_GNI\GITHUB\2024-AI-enabled-material-property-predictions\Use Case-1_Physical Material Property\Integration Pipeline.png>
 
 
 ## FAIR Analysis
