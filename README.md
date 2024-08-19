@@ -1,5 +1,5 @@
 # Evaluation of methods for AI-enabled material property predictions
-This work evaluates modelling and predicting building material information methods, including accounting for incomplete data. A conceptual process framework outlines a possible symbiosis between sub-symbolic and symbolic methods, addressing material properties and indicators. Finally, two use cases are introduced and (partially) implemented that predict material information (physical properties and environmental indicators).  
+This work evaluates methods for modelling and predicting building material information, including accounting for incomplete data. A conceptual process framework outlines a possible symbiosis between sub-symbolic and symbolic methods, addressing material properties and indicators. Finally, two use cases are introduced and (partially) implemented that predict material information (physical properties and environmental indicators).  
 
 * Evaluation of Neuro-Symbolic AI in material property prediction
 *	Conceptual Process Framework 
@@ -9,8 +9,7 @@ This work evaluates modelling and predicting building material information metho
 ## Evaluation of Neuro-symbolic AI methods
 Neuro-symbolic AI methods are investigated that deal with working with different data sources, modelling, predicting material property data, and validating the results. The aim is to find a symbiosis of data-driven (sub-symbolic) and knowledge-driven (symbolic) approaches in both modelling and predicting building material information.
 
-Four research fields are chosen to review the state of the art in material property data modelling and prediction. The data modelling, addressing semantic analysis and concept definitions, discuss Natural language processing (NLP) and semantic knowledge graphs. The property prediction discusses Machine Learning (ML) tasks and Artificial Neural Networks (ANN) tasks. Besides the sub-symbolics, also symbolic inference on knowledge graph is studied. 
-Further references cam be found in the 'LiteratureList.xlsx'.
+Four research fields are selected to review the state of the art in material property data modelling and prediction. The data modelling, studying semantic analysis and concept definitions, address Natural language processing (NLP) and semantic knowledge graphs. The property prediction discusses Machine Learning (ML) and Artificial Neural Networks (ANN) tasks. Knowledge graph inference and link prediction are also studied. Further references can be found in the 'LiteratureList.xlsx'.
 
 
 | Method | Data Source | Data modelling | Data prediction and population | Data validation and storage |
@@ -20,10 +19,10 @@ Further references cam be found in the 'LiteratureList.xlsx'.
 | Symbolic AI | Knowledge Engineering and Ontology | Semantic Knowledge Graph | Knowlegde Graph inference, Link prediction, Description Logic | Resolution-based reasoning |
 
 ## Conceptual Process Framework
-The process framework takes up the previous divisions and puts them in relation and order to each other. In this way, both subdomains can be designed to interact with each other throughout the data modelling and prediction steps.
+The process framework takes up the previous divisions and puts them in relation to and order with each other. In this way, methods of both AI subdomains (sub-symbolic and symbolic) can be designed to interact with each other throughout the data modelling and prediction steps.
 
-- (I)	The data processing handles data sources in various file formats and applies knowledge engineering and feature engineering in parallel. Statistically significant features are acknowledged as part of domain knowledge engineering and can be integrated as concept within a domain-specific knowlegde graph. NLP is utilised to detect semantic similarities between various concept that are defined throughout various (open) data models. As such, a multi dimensional property enrichment for material types in a specific building context is enabled.
-- (II) The data prediction addresses missing information as part of individual data sources as well as missing links between information models for materials and buildings. ML and ANN (sub-symbolic) are used to predict missing material properties, and knowledge graphs and logic (symbolic) are used to shape rules that enable the linking of multi-scalar material information.
+- (I)	 Data processing handles data sources in various file formats and applies knowledge engineering and feature engineering simultaneously. Statistically significant features are acknowledged as part of domain knowledge engineering and can be integrated as a concept within a domain-specific knowledge graph. NLP is utilised to detect semantic similarities between various concepts that are defined throughout multiple (open) data models. As such, domain-specific knowledge graphs can be interlinked in a flexible contextual model and thus can respond to specific use cases.
+- (II) Data prediction addresses missing information in individual data sources and missing links between concepts that describe materials and buildings in various aggregations and scales. ML and ANN (sub-symbolic) train prediction models and eventually forecast material property data per material type in a building use-specific context. Knowledge graphs and logic (symbolic) are used to shape rules and conditions. Missing data and links can be predicted, and by that, complex reasoning challenges can be overcome. For instance, material performances for a specific type of building in a specific climate region can be predicted under certain probabilities following conditional rules and data-driven forecasts. As such, quantitative property predictions enrich a qualitative multi-scalar material information knowledge graph.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/477e815b-7ffb-49a6-9ddf-d4358aa40d42" alt="Concept Diagram" />
