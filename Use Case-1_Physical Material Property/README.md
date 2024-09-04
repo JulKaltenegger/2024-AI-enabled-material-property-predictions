@@ -10,6 +10,9 @@ The following conceptual model is designed:
 (a) inputs (Xn) are the independent variables (material name, material conductivity, material specific heat capacity)
 (b) outputs (Yn) is the dependent variables (material density)
 
+![Conceptual Model](https://raw.githubusercontent.com/JulKaltenegger/2024-AI-enabled-material-property-predictions/main/Use%20Case-1_Physical%20Material%20Property/ConceptModel_PhysicalProperty-1.png)
+
+
 ![Conceptual Model](./images/ConceptModel_PhysicalProperty.png)
 
 ### Regression ML model
