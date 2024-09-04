@@ -16,7 +16,7 @@ The following conceptual model is designed:
 ### Integration pipeline
 ANN and SVM is choose due to handling more complex, non-linear relationship and bigger amount of data. The missing values are dismissed and feature engineering is applied to analyse the significancy of the features relationships using the data variance, the level of relevant information contained within a variable in relation to the others. It reduced the number of features (the impact category) from 27 to 8. Furhtermore, the string values, such as material names are encoded to an multi-dimensional array to include the full information per material property record.
 
-![alt text](ImplementationPipeline-1.png)
+![alt text](ImplementationPipeline.png)
 
 **Multilayer perceptron (MLP) Artificial Neural Network (ANN)**\
 An Artificial Neural Network (ANN) is a computational model inspired by the way biological neural networks in the human brain operate. It consists of interconnected layers of nodes, called neurons, that work together to process information and make decisions.\
