@@ -66,8 +66,51 @@ A tool for systematic analysis of environmental hotspot across the life cycle of
 Indicators used are in line with LCA standardisations, follow EN 15978.
 
 ## FAIR Analysis
-### Findable
-URI: https://github.com/mroeck/slice_hotspots/tree/develop
-### Accessible:
+### Findable (Meta data, unique identifier to every element of metadata and every concept/measurement in the dataset)
+Metadata and data to be found:
+* F1.01 & F1.02 Qualified Referencing: URL and GUID (see below): Röck M, Passer A, Allacker K. “SLiCE: An Open Data Model for Scalable High-Definition Life Cycle Engineering, Hotspot Analysis and Dynamic Assessment of .Buildings.” 2023, Preprint DOI: .https://doi.org/10.5281/zenodo.8369244 . The SLiCE building data model as well as the presented implementation in the SLiCE hotspot analysis prototype are open source and available  with this article. The SLiCE hotspot analysis, implemented as an IPython Jupyer Notebook with interactive widgets, tool is available on Github (https://github.com/mroeck/slice_hotspots/), with the submission pre-release published via Zenodo (https://zenodo.org/badge/latestdoi/645859866). All items are published under a GNU General Public License v3.0. We encourage you to review, reuse, and refine the model and scripts and share-alike.
+* F2.01 Richness of Metadata: Requirements included: ID (1), Creator (1), Title(1), Publisher (1), PublicationYear (1), URL(1), Description(1), Date (dateCreated, dateModified)(0.5), ResourceType (1), License (1),  ContributorName (0.5). Requirements excluded:  MeasurementTechnique (0.5), Keywords (0.5), variableMeasured (0.5), DataFormat (0.5), DataVersion (0.5),  DataFormat(0.5), AlternateIdentifier(0.25), RelatedIdentifier(0.25), Size(0.25),  FundingReference(0.25),  referenceCitation (0.25), GeoLocation (0.25), IncludedIn (0.25), Language(0.25)
+* F3.01 Inclusion of Data Identifier in Metadata (Qualified Referencing >> URL): 
+    - References of the database, dataset, data entry>> via a citation (hyperlinks) or a URL, see  F1.01.
+    - Additionally focusing on:
+    - References to Related Entities  >> Related Entities (reference citations, related articles, related data entries), Includes qualified references (URL, DOI etc),  >> I3.01-03
+    - References to Content Integrity Property >> Data measurement techniques or observed, data processing method or collection of data, data format and size >> R1.01 
+    - References to Provenance Property >> via citations (hyperlinks) or a URL, see R1.01-02
+* F4.01 Searchable Metadata (>>accessible/retrievable >> manual/machines):
+    - Metadata and data is accessible as structured data embedded on web page (manual access)
+    - Metadata and data can be retrieved as mashine readible version (CSV) 
+
+### Accessible (The condition that makes data accessible (e.g., Protocol)
+* A1.01 Access Condition: No access condition (open data)
+* A1.02 Manual access & retrieval of (meta)data: Use the online platform (Github) to download machine-readable (CSV) data manually
+* A1.03 Data Resolution: Metadata und Data resolves correctly, missing 
+* A1.04 Standard communication Protocol: HTTP, HTTPS
+* A1.05 Automatic access and retrieval of (meta)dat: No
+* A1.1 Free protocol: Http refernece
+* A1.2 Deploy Protocol through authentication and authorisation: Protocol through authentication and authorization. 
+* A2 Preserve Metadata: n.a.
+
 ### Interoperable:
+* I1.01 Vocabulary follows domain standards: Controlled variables used according to LCA standard, not registered at FAIRsharing.
+* I1.02 Formal Representation: CSV
+* I2.01 Vocabulary (taxonomies, ontologies and thesauri): Follows domain-specific taxonomy, no ontology >> see terminology and instances, data source.
+* I3.01-03 Qualified Reference to Related Entities"
+    * Unqualified reference on a terminology level, Qualified references (URL) on data instance level [2] when linking to organisations, people, places, projects, or digital objects of previous or related research data 
+    * Related works, "https://github.com/mroeck/slice_hotspots/tree/0.1.1 (URL)";
+    * External Resources Available in, "mroeck/slice_hotspots Release: 0.1.1 (URL)";
+    * Indexed in, "OpenAIRE (URL)";
+    * Citation: RÖCK, M., PASSER, A., & ALLACKER, K. (2023). mroeck/slice_hotspots: Pre-release (0.1.1). Zenodo. https://doi.org/10.5281/zenodo.8366478 (URL)
+
 ### Reusable:
+* R1.01 Qualified Reference to Content Integrity
+ * Unqualified reference citation (URL) on terminology and instance level >> regarding the processing method or collection of data is described: (in text description data processing method, according to EN 15978)
+* R1.1.01 Data usage license: GNU GENERAL PUBLIC LICENSE  Version 3, 29 June 2007, GPL-3.0 license
+* R1.01-02  Qualified Reference to Provenance Property:
+    * Unqualified reference citation (URL) on terminolog, Qualified reference citation on instance level (URL, ORCID)
+    * Provenance properties (chronology of the ownership):
+        * 1 Source of data: description and reference (URL) are missing in the description and referencing.
+        * 2 Data of creation or collection:  indication is missing in the description and referencing. Yet in the description mentions the data follows EN 15978.
+        * 3 Creator and Contributors involved: [Authors, "RÖCK Martin (ORCID)"; "PASSER Alexander, (ORCID)"; "ALLACKER Karen, (ORCID)"]
+        * 4 Data publication, modification and versioning information: [Created, "September 21, 2023"]; [Modified "September 29, 2023";  [Versions, "Version 0.1.1 10.5281/zenodo.8366478]]
+        * 5 Additional processes: Datarights: >> rights are state as "Other (Open)"
+* R1.03: (Meta)data complies with community standards: 1 Community (meta)data standards: not applicable in Datacite Metadata Schema, Dublin Core, Schema.org; 2 Data file formats, machine-readable community standards: Datacite:Format, schema.org: fileFormat, dc:format. Check
