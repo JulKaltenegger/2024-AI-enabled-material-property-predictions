@@ -10,20 +10,21 @@ The following conceptual model is designed:
 (a) inputs (Xn) are the independent variables (material name, material conductivity, material specific heat capacity)
 (b) outputs (Yn) is the dependent variables (material density)
 
-![alt text](ConceptModel_PhysicalProperty.png)
 <img src="ConceptModel_PhysicalProperty.png" alt="alt text" width="50%">
 
-
-### Regression ML model
+###  Integration pipeline
 Further, regression is chosen because of a forecast task using continues data. The task is composed of two steps: the data source processing, during which the relationship between data points and known labels is understood as well as the missing values are treated. The second step, the prediction step, a probabilistic process that uses the above mentioned dataset to train a linear regression model.
 
-![alt text](<Integration Pipeline-1.png>)
+![alt text](ConceptModel_PhysicalProperty-1.png)
 
 The goal of this ML method is to fit a linear model with the feature’s coefficients β1..βn to minimize the residual sum of square between the observed and the predicted linear approximation of the dependent variable ŷ. The following assumptions yield.
 
-**Linear regression:** Null Hypothesis H_0: we assume linearity. Loss Function (L_0) Mean Square error (MSE) is the sum of the squared vertical distances between the predicted and the true values. 
-**Regularized Linear Regression:** Uses the same hypothesis and loss functions but uses a regularization term in the loss function to prevent overfitting. A penalty term, that shrinks the value of feature weights, thus preventing values to be too closely fitted to the training data. Three regulasiation terms are: **Lasso** and **Ridge**.
-**Kernel Ridge Regression (KRR):** The same ridge loss is used, but the hypothesis function consists in a Kernel function which allows to capture non-linearities. When relations between data are non- linear, Kernel functions allow to remap features to a high-dimensional space, where their behavior becomes linear. Three Kernel functions are compared: **Linear (LIN)**, **Polynomial (POL)** and **Radial Basis Function (RBF)**.
+**Linear regression:** Null Hypothesis H_0: we assume linearity. Loss Function (L_0) Mean Square error (MSE) is the sum of the squared vertical distances between the predicted and the true values.\
+
+**Regularized Linear Regression:** Uses the same hypothesis and loss functions but uses a regularization term in the loss function to prevent overfitting. A penalty term, that shrinks the value of feature weights, thus preventing values to be too closely fitted to the training data. Three regulasiation terms are: **Lasso** and **Ridge**.\
+
+**Kernel Ridge Regression (KRR):** The same ridge loss is used, but the hypothesis function consists in a Kernel function which allows to capture non-linearities. When relations between data are non- linear, Kernel functions allow to remap features to a high-dimensional space, where their behavior becomes linear. Three Kernel functions are compared: **Linear (LIN)**, **Polynomial (POL)** and **Radial Basis Function (RBF)**.\
+
 
 
 ## FAIR Analysis
