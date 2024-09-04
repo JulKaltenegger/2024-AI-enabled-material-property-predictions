@@ -10,12 +10,12 @@ The following conceptual model is designed:
 (a) inputs (Xn) are the independent variables (material name, material conductivity, material specific heat capacity)
 (b) outputs (Yn) is the dependent variables (material density)
 
-<img src="https://github.com/user-attachments/assets/3f027f15-99f7-4fa7-8c2f-ac93fb0fbf1c" alt="Concept Model" width="50%" />
+![Conceptual Model](./images/ConceptModel_PhysicalProperty.png)
 
 ### Regression ML model
 Further, regression is chosen because of a forecast task using continues data. The task is composed of two steps: the data source processing, during which the relationship between data points and known labels is understood as well as the missing values are treated. The second step, the prediction step, a probabilistic process that uses the above mentioned dataset to train a linear regression model.
 
-![Integration Pipeline](https://github.com/user-attachments/assets/9baf1bae-05b6-47be-8eed-8f87c2dbcda6)
+![Integration Pipeline](./images/Integration Pipeline.png)
 
 The goal of this ML method is to fit a linear model with the feature’s coefficients β1..βn to minimize the residual sum of square between the observed and the predicted linear approximation of the dependent variable ŷ. The following assumptions yield.
 
