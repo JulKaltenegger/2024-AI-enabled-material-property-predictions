@@ -13,20 +13,31 @@ The following conceptual model is designed:
 
 <img src="ConceptModel_EnvironmentalImpact.png" alt="alt text" width="50%">
 
+| Features | Notation | Description |
+| :-----------------:   | :----------: | :----------: |
+| Indicator_GWP | GWP_Climate change  | total, fossil, biogenic, and land use (kg CO2-eq) Indicator of potential global warming due to emissions of greenhouse gases to the air. Divided into 3 subcategories based on the emission source: (1) fossil resources, (2) bio-based resources, and (3) land use change.
+| indicator_darf   | Depletion of abiotic resources – fossil fuels  | (MJ, net calorific value) Indicator of the depletion of natural fossil fuel resources.  Measure the extent to which the use of non-renewable fossil fuel resources, such as coal, oil, and natural gas, is reducing the availability of these resources for future generations.
+| indicator_ecofw  | Eco-toxicity (freshwater) |(kg PO4-eq) indicator of the enrichment of the freshwater ecosystem with nutritional elements, due to the emission of nitrogen or phosphor-containing compounds.
+| indicator_luosom  | Land Use, Occupation, Soil Organic Matter | text
+| indicator_luobio  | Land Use, Biodiversity | text
+| indicator_luoagr   | Land Use, Agricultural | text
+| indicator_luofor  | Land Use, Forestry | text
+| indicator_lutsom  | Land Use, Transformation, Soil Organic Matter | text 
+
 ### Integration pipeline
 ANN and SVM is choose due to handling more complex, non-linear relationship and bigger amount of data. The missing values are dismissed and feature engineering is applied to analyse the significancy of the features relationships using the data variance, the level of relevant information contained within a variable in relation to the others. It reduced the number of features (the impact category) from 27 to 8. Furhtermore, the string values, such as material names are encoded to an multi-dimensional array to include the full information per material property record.
 
 ![alt text](ImplementationPipeline.png)
 
 **Multilayer perceptron (MLP) Artificial Neural Network (ANN)**\
-An Artificial Neural Network (ANN) is a computational model inspired by the way biological neural networks in the human brain operate. It consists of interconnected layers of nodes, called neurons, that work together to process information and make decisions.\
+An Artificial Neural Network (ANN) is a computational model inspired by the way biological neural networks in the human brain operate. It consists of interconnected layers of nodes, called neurons, that work together to process information and make decisions.
 
-ANNs can be mathematically considered as a nonlinear regression model f(x) = φ(w,x), where φ is a nonlinear activation function. Perceptron are the basic units of ANNs. Neural networks are trained using techniques called feedforward propagation and backpropagation. A Feedforward Neural Network (FNN) is a type of artificial neural network where information moves only in one direction, from the input layer through any hidden layers and finally to the output layer. They are well-suited for tasks that require a simple, one-way processing of data — including pattern recognition and predictive modelling. This use case studies the neural network feedforward architecture, using the library Keras and Tenserflow.\
+ANNs can be mathematically considered as a nonlinear regression model f(x) = φ(w,x), where φ is a nonlinear activation function. Perceptron are the basic units of ANNs. Neural networks are trained using techniques called feedforward propagation and backpropagation. A Feedforward Neural Network (FNN) is a type of artificial neural network where information moves only in one direction, from the input layer through any hidden layers and finally to the output layer. They are well-suited for tasks that require a simple, one-way processing of data — including pattern recognition and predictive modelling. This use case studies the neural network feedforward architecture, using the library Keras and Tenserflow.
 
 **Support Vector Machine (SVM)**\
-Support Vector Regression (SVR) is an extension of Support Vector Machine (SVM) which introduces a region, named tube, around the function to optimize. The aim is to find the tube that best approximates the continuous-valued function while minimizing the prediction error, that is, the difference between the predicted and the true value.\
+Support Vector Regression (SVR) is an extension of Support Vector Machine (SVM) which introduces a region, named tube, around the function to optimize. The aim is to find the tube that best approximates the continuous-valued function while minimizing the prediction error, that is, the difference between the predicted and the true value.
 
-The loss function uses ε- insensitive loss, which increases robustness and allows to obtain sparse solutions. The ε-insensitive loss function delimits a ‘‘tube-shaped’’ region, centred around the hypothesis function, inside which errors are neglected. Different loss functions can be used, such as linear, quadratic or radial.\
+The loss function uses ε- insensitive loss, which increases robustness and allows to obtain sparse solutions. The ε-insensitive loss function delimits a ‘‘tube-shaped’’ region, centred around the hypothesis function, inside which errors are neglected. Different loss functions can be used, such as linear, quadratic or radial.
 
 
 
@@ -52,17 +63,14 @@ Data definitions and calculations follow EN 15978
 | LCIamounts | TechflowUnit | "tkm"
 | LCIA results | indicatorGWP | "15.7813488"
 | LCIA results | indicator_PM | "0.0143808"
-| LCIA results | indicator_EP | "0.0098672"
 
-##### Completeness 
-(Number of empty value)
+##### Completeness (Number of empty value)
 fully open to public, missing value for all indicators: 2014/6195
-#####  Relevance 
-(What is the purpose of the data, how can we use it)
+
+#####  Relevance (What is the purpose of the data, how can we use it)
 A tool for systematic analysis of environmental hotspot across the life cycle of buildings and construction elements using data compliant with the SLiCE building data model.
 
-##### Reliability 
-(Are the indicator definition and data collection and analysis processes clear and are these consistently applied over time)
+##### Reliability (Are the indicator definition and data collection and analysis processes clear and are these consistently applied over time)
 Indicators used are in line with LCA standardisations, follow EN 15978.
 
 ## FAIR Analysis
@@ -80,7 +88,7 @@ Metadata and data to be found:
     - Metadata and data is accessible as structured data embedded on web page (manual access)
     - Metadata and data can be retrieved as mashine readible version (CSV) 
 
-### Accessible (The condition that makes data accessible (e.g., Protocol)
+### Accessible: The condition that makes data accessible (e.g., Protocol)
 * A1.01 Access Condition: No access condition (open data)
 * A1.02 Manual access & retrieval of (meta)data: Use the online platform (Github) to download machine-readable (CSV) data manually
 * A1.03 Data Resolution: Metadata und Data resolves correctly, missing 
@@ -90,7 +98,7 @@ Metadata and data to be found:
 * A1.2 Deploy Protocol through authentication and authorisation: Protocol through authentication and authorization. 
 * A2 Preserve Metadata: n.a.
 
-### Interoperable:
+### Interoperable: Formal representations, data should be machine readable, following domain knowledge
 * I1.01 Vocabulary follows domain standards: Controlled variables used according to LCA standard, not registered at FAIRsharing.
 * I1.02 Formal Representation: CSV
 * I2.01 Vocabulary (taxonomies, ontologies and thesauri): Follows domain-specific taxonomy, no ontology >> see terminology and instances, data source.
@@ -101,7 +109,7 @@ Metadata and data to be found:
     * Indexed in, "OpenAIRE (URL)";
     * Citation: RÖCK, M., PASSER, A., & ALLACKER, K. (2023). mroeck/slice_hotspots: Pre-release (0.1.1). Zenodo. https://doi.org/10.5281/zenodo.8366478 (URL)
 
-### Reusable:
+### Reusable: Whether data is useful in other context, provide contextual information when data was created
 * R1.01 Qualified Reference to Content Integrity
  * Unqualified reference citation (URL) on terminology and instance level >> regarding the processing method or collection of data is described: (in text description data processing method, according to EN 15978)
 * R1.1.01 Data usage license: GNU GENERAL PUBLIC LICENSE  Version 3, 29 June 2007, GPL-3.0 license
@@ -113,4 +121,6 @@ Metadata and data to be found:
         * 3 Creator and Contributors involved: [Authors, "RÖCK Martin (ORCID)"; "PASSER Alexander, (ORCID)"; "ALLACKER Karen, (ORCID)"]
         * 4 Data publication, modification and versioning information: [Created, "September 21, 2023"]; [Modified "September 29, 2023";  [Versions, "Version 0.1.1 10.5281/zenodo.8366478]]
         * 5 Additional processes: Datarights: >> rights are state as "Other (Open)"
-* R1.03: (Meta)data complies with community standards: 1 Community (meta)data standards: not applicable in Datacite Metadata Schema, Dublin Core, Schema.org; 2 Data file formats, machine-readable community standards: Datacite:Format, schema.org: fileFormat, dc:format. Check
+* R1.03: (Meta)data complies with community standards: 
+    * 1 Community (meta)data standards: not applicable in Datacite Metadata Schema, Dublin Core, Schema.org; 
+    * 2 Data file formats, machine-readable community standards: Datacite:Format, schema.org: fileFormat, dc:format. Check
