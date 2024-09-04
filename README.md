@@ -35,5 +35,5 @@ The first use case studies material physical property prediction (data source: A
 Both data sets show multi scalar information structure, as SLICE and ASHREA represent different scale. SLiCE is based on a building element level, while ASHRAE is based on material level.
 
 <div align="center">
-<img src="Early-stage implementation.png" alt="alt text" width="50%">
+<img src="Early-stage implementation.png" alt="alt text" width="75%">
 </div>
