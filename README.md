@@ -23,7 +23,7 @@ The process framework takes up the previous research fields and relates them to 
 - (II) Data prediction addresses missing information in individual data sources and missing links between concepts that describe materials and buildings in various aggregations and scales. ML and ANN (sub-symbolic) train prediction models and eventually forecast material property data per material type in a building use-specific context. Knowledge graphs and logic (symbolic) are used to shape rules and conditions. Missing data and links can be predicted, and by that, complex reasoning challenges can be overcome. For instance, material performances for a specific type of building in a specific climate region can be predicted under certain probabilities following conditional rules and data-driven forecasts. As such, quantitative property predictions enrich a qualitative multi-scalar material information knowledge graph.
 
 <div align="center">
-<img src="Framework.png" alt="alt text" width="100%">
+<img src="Concept Framework.png" alt="alt text" width="100%">
 </div>
 
 ## Early-stage implementation of studied methods
